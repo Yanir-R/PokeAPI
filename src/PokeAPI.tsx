@@ -6,18 +6,15 @@ export const PokeAPI: React.FC = ({ }) => {
     let [pokemonData, setPokemonData] = useState([])
 
     let [limit, setLimit] = useState(5)
-    let [tpokemonType, setPokemonType] = useState('')
+    let [pokemonType, setPokemonType] = useState('')
 
+    const fetchPokemonData = () => {
 
+        fetch(`${api.getAllPokemon()}`)
+    }
 
     useEffect(() => {
-        const fetchPokemonData = async () => {
-            const res = await fetch
-                (`https://pokeapi.co/api/v2/pokemon?limit=${limit}`)
-            const data = await res.json()
 
-            setPokemonData(data.results)
-        }
         fetchPokemonData()
     }, [])
 
@@ -25,7 +22,19 @@ export const PokeAPI: React.FC = ({ }) => {
     return (
         <div>
             <h2>pokeAPI Page</h2>
-            <PokeList pokemonData={pokemonData} />  
+            <PokeList pokemonData={pokemonData} />
         </div>
     )
 }
+
+
+// useEffect(() => {
+//     const fetchPokemonData = async () => {
+//         const res = await fetch
+//             (`https://pokeapi.co/api/v2/pokemon?limit=${limit}`)
+//         const data = await res.json()
+
+//         setPokemonData(data.results)
+//     }
+//     fetchPokemonData()
+// }, [])
