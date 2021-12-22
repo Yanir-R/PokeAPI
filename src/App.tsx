@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css'
 import { PokeDetails } from './components/PokeDetails';
-import { PokeGif } from './components/PokeGif';
-import { PokeList } from './components/PokeList';
 import { PokeAPI } from './PokeAPI';
 
 
