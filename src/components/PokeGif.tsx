@@ -1,27 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../App.css'
 
-export const PokeGif: React.FC<any> = ({ name, base_experience, image }) => {
+export const PokeGif: React.FC<any> = ({ name, base_experience, image, id }) => {
     return (
-        <body>
-            <section>
-                <div className="container">
-                    <div className="card">
-                        <div className="content">
-                            <img className="imgBx" src={image} alt="img" />
-                            <div className="contentBx" >
-                                <h3>{name}<br />
-                                    <span>{base_experience}</span></h3>
-                            </div>
+        <section >
+            <div className="container">
+                <div className="card">
+                    <div className="content">
+                        <img className="imgBx" src={image} alt="img" />
+                        <div className="contentBx" >
+                            <h3>{name}<br />
+                                <span>{base_experience}</span></h3>
                         </div>
-                        <ul className="sci">
-                            <li>
-                                <a href="*"  >Read More</a>
-                            </li>
-                        </ul>
                     </div>
+                    <ul className="sci">
+                        <li>
+                            <Link to={`pokemon/${id}`}>
+                                Read More
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </body>
+            </div>
+        </section>
+
     )
 }
