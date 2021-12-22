@@ -2,17 +2,25 @@ import React from "react";
 import { PokeGif } from "./PokeGif";
 
 export const PokeList: React.FC<any> = ({ pokemonData }) => {
+    console.log('pokeList:', pokemonData)
     return (
+
         <div>
             <h2>PokeList Page</h2>
-            {pokemonData.map(({ name, url }: any) => (
-                <ul key={name}>
+            <ul>
+                {pokemonData.map((pokemon: any) => (
 
-                    <PokeGif name={name} url={url} />
 
-                </ul>
-            ))}
+                    < PokeGif
+                        name={pokemon.name}
+                        base_experience={pokemon.base_experience}
+                        image={pokemon.sprites.front_default}
+                    />
 
+
+                ))}
+
+            </ul>
         </div>
     )
 }
