@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #161616;
+  background: #110f83;
   min-height: 100vh;
 }
 
@@ -127,3 +127,31 @@ section::after {
   color: #fff;
   font-size: 20px;
 }
+
+
+.pagination__button {
+  padding: 5px;
+  background-color: #9d5a9d;
+  border: 1px solid #2d445f;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.pagination__button:hover {
+  background-color: #6e4e8c;
+}
+
+.pagination__button--disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #616b62;
+}
+
+.pagination__page-active {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 50px;
+}
+

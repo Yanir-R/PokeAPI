@@ -8,8 +8,9 @@ export const PokeList: React.FC<any> = ({ pokemonData }) => {
         <div>
             <h2 >PokeList Page</h2>
             <ul  >
-                {pokemonData.map((pokemon: any) => (
+                {pokemonData.map((pokemon: any, i: any) => (
                     < PokeGif
+                        key={i}
                         name={pokemon.name}
                         base_experience={pokemon.base_experience}
                         image={pokemon.sprites.front_default}

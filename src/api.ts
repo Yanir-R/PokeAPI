@@ -1,8 +1,8 @@
 export const pokemonBaseAPI = 'https://pokeapi.co/api/v2/pokemon/'
 
 export const api = {
-    getAllPokemon: async () => {
-        let fetchPokemonsResponse = await fetch(`${pokemonBaseAPI}`)
+    getAllPokemon: async (limit: number, offset: number) => {
+        let fetchPokemonsResponse = await fetch(`${pokemonBaseAPI}?limit=${limit}&offset=${offset}`)
         let pokemonsResponseJson = await fetchPokemonsResponse.json()
 
         let fetchPokemonResponse = await Promise.all(pokemonsResponseJson.results.map(async (pokemonUrl: any) => {
