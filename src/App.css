@@ -128,14 +128,10 @@ section::after {
   font-size: 20px;
 }
 
-.pagination__container {
-  display: flex;
-  align-items: center;
-}
 
 .pagination__button {
   padding: 5px;
-  background-color: #5a9d6e;
+  background-color: #9d5a9d;
   border: 1px solid #2d445f;
   cursor: pointer;
   border-radius: 3px;
@@ -143,7 +139,7 @@ section::after {
 }
 
 .pagination__button:hover {
-  background-color: #4e8c61;
+  background-color: #6e4e8c;
 }
 
 .pagination__button--disabled {
@@ -159,8 +155,3 @@ section::after {
   min-width: 50px;
 }
 
-.pagination__current-page {
-  display: block;
-  width: 15px;
-  margin-right: 5px;
-}
