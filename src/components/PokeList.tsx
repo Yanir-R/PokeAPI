@@ -22,7 +22,7 @@ export const PokeList: React.FC<any> = ({ pokemonData }) => {
                             image={pokemon.sprites.front_default}
                             id={pokemon.id}
                         />
-                        <button onClick={() => setFavorite({ ...favorites, [pokemon.id]: !favorites[pokemon.id] })} >
+                        <button className="favoriteButton" onClick={() => setFavorite({ ...favorites, [pokemon.id]: !favorites[pokemon.id] })} >
                             {favorites[pokemon.id] ? 'remove from' : 'add to'} favorites
                         </button>
                     </>

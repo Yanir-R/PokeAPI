@@ -14,14 +14,10 @@ const Pagination: React.FC<any> = ({ setPageNumber, pageNumber }: any) => {
 
     return (
         <div>
-
+            <h3 className='pagesSpan'>Click To See More Pokemons:</h3>
             <div className={`pagination__button pagination__page-previous ${pageNumber === 1 && 'pagination__button--disabled'}`}
                 onClick={() => onPreviousPage()}>
                 Previous
-            </div>
-
-            <div>
-                {/* <span>{pageNumber}</span> */}
             </div>
             <div className={`pagination__button pagination__page-next `}
                 onClick={() => onNextPage()}>
