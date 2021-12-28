@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+![image](https://user-images.githubusercontent.com/67261194/147602441-401fab0f-4d34-4aec-96cf-7ea2850b1b3a.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get Started
+#### Clone the repo:
+<code> git clone https://github.com/Yanir-R/PokeAPI.git </code>
 
-## Available Scripts
+#### Install dependencies :
+<code> npm i </code>
 
-In the project directory, you can run:
+#### Run the Server:
+<code> npm start </code>
 
-### `npm start`
+#### Open Your Browser At:
+<code>http://localhost:3000/</code>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Table of Contents [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-### `npm test`
+- [Introduction](#Introduction)
+- [Features](#features)
+- [Instructions](#Instructions)
+- [Technologies](#Technologies)
+- [Motivation](#Motivation)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Introduction
+React JS app that pulls data of Pokemons from [Pokeapi](https://pokeapi.co/), <br />
+allows you to browse pokemons & see more info about each pokemon & set a favorites/de-select the favorite pokemon.
 
-### `npm run build`
+## Features
+- [x] Pagination that display 10 pokemons pair page
+- [X] Favorites pokemon can be saved or delete from <code>localStorage</code> 
+- [x] Shows details about each pokemon 
+- [X] Responsive Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instructions
+- Initially the application with your Browser at <code>http://localhost:3000/</code>
+- The first call is to the API to bring our list of pokemons.
+- Switch pages to see more pokemons results.
+- Add\Delete pokemons & you can see the saved pokemon at <code>localStorage</code>.
+- Hover on pokemon to see <code>Read More</code> button for more details about the pokemon.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Motivation
+I created the project to test my abilities without library help.
+I Wanted to create Pagination & API calls with only ReactJS 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies
+<p align="flex">  
+<img src="https://img.icons8.com/nolan/64/react-native.png" alt="reactjs"/>
+<img src="https://img.icons8.com/color/48/000000/typescript.png" alt="typescript"/>
+<img src="https://img.icons8.com/nolan/64/css-filetype.png" alt="css"/>
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+MIT © [Yanir-r]()
