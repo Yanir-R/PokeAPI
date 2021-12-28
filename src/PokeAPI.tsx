@@ -22,9 +22,8 @@ export const PokeAPI: React.FC = () => {
     return (
         <div>
 
-            <h2>pokeAPI Page</h2>
-            <PokeList pokemonData={pokemonData} />
             <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} />
+            <PokeList pokemonData={pokemonData} />
 
         </div>
     )
