@@ -12,14 +12,13 @@ export const PokeDetails: React.FC = () => {
 
     const { id } = useParams()
     let [pokemonData, setPokemonData] = useState<Pokemon>({ name: 'bla', height: 1 })
-    // console.log(id)
+
 
     let fetchPokemonById = (id: any) => {
         api.getPokemonById(id)
             .then((PokemonResultForId) => {
                 console.log('my data results:', PokemonResultForId)
                 setPokemonData(PokemonResultForId)
-
             })
     }
 

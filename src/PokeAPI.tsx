@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { api } from "./api";
 import Pagination from "./components/Pagination";
 import { PokeList } from "./components/PokeList";
+import './App.css'
 
 export const PokeAPI: React.FC = () => {
     let [pokemonData, setPokemonData] = useState([])
@@ -21,10 +22,11 @@ export const PokeAPI: React.FC = () => {
 
     return (
         <div>
-
-            <h2>pokeAPI Page</h2>
-            <PokeList pokemonData={pokemonData} />
+            <div className="one">
+                <h1 >Pokemon App</h1> <br />
+            </div>
             <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} />
+            <PokeList pokemonData={pokemonData} />
 
         </div>
     )

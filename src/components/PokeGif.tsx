@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import '../App.css'
 
 export const PokeGif: React.FC<any> = ({ name, base_experience, image, id }) => {
+
     return (
         <section >
             <div className="container">
