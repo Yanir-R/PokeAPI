@@ -23,20 +23,20 @@
 - [Motivation](#Motivation)
 
 ## Introduction
-React JS app that pulls data of Pokemons from [Pokeapi](https://pokeapi.co/), <br />
-allows you to browse pokemons & see more info about each pokemon & set a favorites/de-select the favorite pokemon.
+ReactJS app that pulls data of Pokemons from [Pokeapi](https://pokeapi.co/), <br />
+allows you to browse pokemon & see more info about each pokemon & set a favorites/de-select the favorite pokemon.
 
 ## Features
-- [x] Pagination that display 10 pokemons pair page
+- [x] Pagination that display 10 pokemon pair page
 - [X] Favorites pokemon can be saved or delete from <code>localStorage</code> 
 - [x] Shows details about each pokemon 
 - [X] Responsive Design
 
 ## Instructions
 - Initially the application with your Browser at <code>http://localhost:3000/</code>
-- The first call is to the API to bring our list of pokemons.
-- Switch pages to see more pokemons results.
-- Add\Delete pokemons & you can see the saved pokemon at <code>localStorage</code>.
+- The first call is to the API to bring our list of pokemon.
+- Switch pages to see more pokemon results.
+- Add\Delete pokemon & you can see the saved pokemon at <code>localStorage</code>.
 - Hover on pokemon to see <code>Read More</code> button for more details about the pokemon.
 
 ## Motivation
